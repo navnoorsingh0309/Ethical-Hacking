@@ -1,7 +1,7 @@
 import socket, struct
 
 #creating a socket
-#AF_PACKET: socket which allows to send and receive raw packets thorugh kernel
+#AF_PACKET: socket which allows to send and receive raw packets thorugh kernel(works only on linux)
 s = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
 
 #Till Infinite
